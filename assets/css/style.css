@@ -1,0 +1,33 @@
+.navbar {
+    background-color: #3582e0;
+}
+
+.banner {
+    background-image: url(../img/campeon.jpg);
+    background-size: cover;
+    position: relative;
+    text-align: right
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.banner-evento {
+    position: relative;
+}
+
+footer {
+    background-color: #1d3a4a;
+    margin-top: 1rem;
+}
+
+.espacio-footer {
+    margin-right: 2rem;
+}
