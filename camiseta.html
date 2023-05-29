@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>TP Integrador JavaScript</title>
+</head>
+<body>
+    <header class="container">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-graynav">
+            <div class="container">
+                <a class="navbar-brand ps-3 p-0 fs-3" href="index.html">
+                    <img src="assets/img/afa.png" alt="Logo" width="50px" height="auto" class="d-inline-block">
+                    Argentina Campéon
+                </a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 end-0 pe-3 p-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">La Selección</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Los héroes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">La sede</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Saluda al equipo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-dark" href="#">Comprar camiseta</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>        
+        <div class="container" style="padding-top: 8rem;">
+            <div class="row justify-content-md-center g-1">   
+                <div class="col-3" style="width: 13rem;">
+                    <div class="card border border-info p-1">
+                        <div class="card-body text-center">
+                            <p class="card-title">Camiseta</p>
+                            <h5 class="card-text">Titular 2022</h5>
+                            <img src="assets/img/titular.jpeg" class="card-img-top" alt="...">
+                            <p class="card-text fw-bold">Selección Masculina</p>
+                            <h6 class="card-subtitle mb-2 text-muted" style="font-size: 0.8rem;">$ 24.999.-</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3" style="width: 13rem;">
+                    <div class="card border border-primary p-1">
+                        <div class="card-body text-center">
+                            <p class="card-title">Camiseta</p>
+                            <h5 class="card-text">Suplente 2022</h5>
+                            <img src="assets/img/suplente.jpeg" class="card-img-top" alt="...">
+                            <p class="card-text fw-bold">Selección Masculina</p>
+                            <h6 class="card-subtitle mb-2 text-muted" style="font-size: 0.8rem;">$ 23.999.-</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3" style="width: 13rem;">
+                    <div class="card border border-dark p-1">
+                        <div class="card-body text-center">
+                            <p class="card-title">Camiseta</p>
+                            <h5 class="card-text">Alternativa 2023</h5>
+                            <img src="assets/img/alternativa.jpg" class="card-img-top" alt="...">
+                            <p class="card-text fw-bold">Selección Femenina</p>
+                            <h6 class="card-subtitle mb-2 text-muted" style="font-size: 0.8rem;">$ 22.999.-</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container w-50 pt-2">
+            <div class="text-center">
+                <p class="m-0"><sup>*** niños 20% de descuento ***</sup>
+                <h2>CONSIGUE TU CAMISETA</h2>
+                </p>
+            </div>
+            <form class="row g-1 gx- formulario">
+                <div class="col-md-6 mb-3">
+                    <input type="text" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <input type="text" class="form-control" placeholder="Apellido">
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="cantidad" class="form-label">Cantidad</label>
+                    <input type="text" class="form-control" id="cantidad" placeholder="Cantidad">
+                </div>
+                <div class="col-md-9 mb-3">
+                    <label for="cantidad" class="form-label">Modelo</label>
+                    <select id="modelo" class="form-select">
+                        <option value="titular">Titular</option>
+                        <option value="titularNiños">Titular Niños</option>
+                        <option value="suplente">Suplente</option>
+                        <option value="suplenteNiños">Suplente Niños</option>
+                        <option value="alternativa">Alternativa</option>
+                        <option value="alternativaNiños">Alternativa Niños</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <p class="alert alert-primary" id="precioTotal">Precio total: $</p>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn text-white fs-6 btnBorrar" style="background-color: #96c93e;" type=" button">Borrar</button>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn text-white fs-6 btnCalcular" style="background-color: #96c93e;" type=" button">Calcular</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-gradient">
+            <div class="container" style="max-width: 90%;">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item espacio-footer">
+                        <a class="nav-link" href="#">Preguntas frecuentes</a>
+                    </li>
+                    <li class="nav-item espacio-footer">
+                        <a class="nav-link" href="#">Contáctanos</a>
+                    </li>
+                    <li class="nav-item espacio-footer">
+                        <a class="nav-link" href="#">Prensa</a>
+                    </li>
+                    <li class="nav-item espacio-footer">
+                        <a class="nav-link" href="#">El plantel</a>
+                    </li>
+                    <li class="nav-item espacio-footer">
+                        <a class="nav-link" href="#">Juveniles</a>
+                    </li>
+                    <li class="nav-item espacio-footer">
+                        <a class="nav-link" href="#">Privacidad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Términos y condiciones</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
