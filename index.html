@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>TP Integrador Front</title>
+    <title>Argentina campeón mundial</title>
 </head>
 <body>
     <header class="container">
@@ -19,16 +19,16 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 end-0 pe-3 p-2">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">La Selección</a>
+                            <a class="nav-link" aria-current="page" href="#">La Selección</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Los héroes</a>
+                            <a class="nav-link" href="#heroes">Los héroes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">La sede</a>
+                            <a class="nav-link" href="#sede">La sede</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Saluda al equipo</a>
+                            <a class="nav-link" href="#seleccion">Saluda al equipo</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fw-bold text-dark" href="camiseta.html">Comprar camiseta</a>
@@ -44,12 +44,12 @@
                 <div class="banner-evento col-6">
                     <h1>Argentina Campeón</h1>
                     <h5>Por tercera vez en su historia la selección argentina levantó la preciada Copa del Mundo. Tras 36 años de esperanzas y luego de dos finales esquivas, el equipo de Scaloni logró coronarse en el verde césped del estadio de Lusail. De la mano de Lionel Messi y el Dibu Martínez, la selección superó en tanda de penales a la siempre difícil selección francesa del crack Mbappé. Salud campeón!</h5>
-                    <a href="#" class="btn btn-outline-light">Saluda al equipo</a>
+                    <a href="#seleccion" class="btn btn-outline-light">Saluda al equipo</a>
                     <a href="camiseta.html" class="btn btn-success" style="background-color: #29a744; border-color: #29a744;">Comprar camiseta</a>
                 </div>
             </div>
         </div>
-         <div class="container">
+        <div id="heroes" class="container">
             <p class="text secondary pb-0 mb-0 mt-3" style="text-align: center;">CONOCE A LOS</p>
             <h1 style="text-align: center;">HEROES</h1>
             <div class="row row-cols-1 row-cols-md-3 g-3">
@@ -82,13 +82,13 @@
                             <span class="badge bg-secondary">Jugador Jóven</span>
                             <span class="badge bg-primary">Chelsea (Eng)</span>
                             <h5 class="card-title">Enzo Fernández</h5>
-                            <p class="card-text">Enzo Jeremías Fernández, mas conocido como «Gardelito», es un futbolista argentino que juega como centrocampista en el Chelsea F. C. de la Premier League. Su carrera como futbolista profesional comenzó en el 2020, en Club Atlético River Plate.</p>
+                            <p id="sede" class="card-text">Enzo Jeremías Fernández, mas conocido como «Gardelito», es un futbolista argentino que juega como centrocampista en el Chelsea F. C. de la Premier League. Su carrera como futbolista profesional comenzó en el 2020, en Club Atlético River Plate.</p>
                         </div>
                     </div>
                 </div>                                
             </div>
-         </div>
-         <div class="card mb-3 text-white mt-4" style="max-width: 100%; background-color: #3582e0">
+        </div>
+        <div class="card mb-3 text-white mt-4" style="max-width: 100%; background-color: #3582e0">
             <div class="row g-0">
                 <div class="col-md-6 d-flex border">
                     <img src="assets/img/doha.jpg" class="img-fluid rounded-start" alt="Doha">
@@ -98,17 +98,16 @@
                         <h3 class="card-title">Lusail - Qatar</h5>
                         <p class="card-text">Lusail es una ciudad-isla del Estado de Catar, en estado de construcción, situada en la costa norte, a 15 km del centro de la capital, Doha, y del lago West Bay. Encuadrada en el municipio de Al Daayen, tendrá 35 km² y se prevé que podrá alojar a unos 200 000 habitantes.</p>
                         <p class="card-text"></p>En esta urbe se aloja el estadio que lleva su nombre, el más grande de los estadios en los que se disputó el Mundial. Con un costo de USD 767 millones y una capacidad de 88.966 espectadores, fue diseñado por una empresa británica, tiene un aspecto de un cuenco de oro bruñido y tras el torneo se transformará en un espacio comunitario de escuelas, comercios, instalaciones deportivas y clínicas de salud.</p>
-                        <a href="#" class="btn btn-outline-light">Conoce más</a>
+                        <a href="https://www.lusail.com" target="blank" class="btn btn-outline-light">Conoce más</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container w-50 pt-2">
+        <div id="seleccion" class="container w-50 pt-2">
             <div class="text-center">
-                <p class="text-secondary m-0"><sup>SALUDA A LA</sup>
-                    <h2>SELECCION</h2>
-                </p>
-                <p class="text-secondary m-1">Saluda al plantel campeón en <a href="#!" class="text-secondary"                 style="text-decoration-style: dotted;">Qatar 2022</a>. Cuéntale tus sensaciones!</p>
+                <p class="text-secondary m-0"><sup>SALUDA A LA</sup></p>
+                <h2 >SELECCION</h2>
+                <p class="text-secondary m-1">Saluda al plantel campeón en <a href="#sede" class="text-secondary" style="text-decoration-style: dotted;">Qatar</a> 2022. Cuéntale tus sensaciones!</p>
             </div>
             <form class="row g-1 gx-5">
                 <div class="col-md-6 mb-3">
@@ -119,7 +118,7 @@
                 </div>
                 <div class="mb-3">
                     <textarea class="form-control fs-4" rows="3" placeholder="Escríbele a los campeones del mundo!"></textarea>
-                    <p class="text-secondary"><sub>Recuerda mencionar a tu jugador favorito</sub></p>
+                    <p class="text-secondary"><sub>Recuerda mencionar a tu <a href="Controlador?access=jugadores" class="text-secondary" style="text-decoration-style: dotted;">jugador</a> favorito</sub></p>
                 </div>
                 <div class="d-grid">
                     <button class="btn btn-success text-white fs-5" style="background-color: #96c93e; border-color: #96c93e;" type="submit">Enviar</button>
@@ -132,25 +131,13 @@
             <div class="container" style="max-width: 90%;">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item espacio-footer">
-                        <a class="nav-link" href="#">Preguntas frecuentes</a>
+                        <a class="nav-link" href="acerca.html">Acerca de la asociación</a>
                     </li>
                     <li class="nav-item espacio-footer">
-                        <a class="nav-link" href="#">Contáctanos</a>
-                    </li>
-                    <li class="nav-item espacio-footer">
-                        <a class="nav-link" href="#">Prensa</a>
-                    </li>
-                    <li class="nav-item espacio-footer">
-                        <a class="nav-link" href="#">El plantel</a>
-                    </li>
-                    <li class="nav-item espacio-footer">
-                        <a class="nav-link" href="#">Juveniles</a>
-                    </li>
-                    <li class="nav-item espacio-footer">
-                        <a class="nav-link" href="#">Privacidad</a>
+                        <a class="nav-link" href="jugadores.html">Lista de convocados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Términos y condiciones</a>
+                        <a class="nav-link" href="terminos.html">Términos y condiciones</a>
                     </li>
                 </ul>
             </div>
